@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat',sans-serif ;
+    background-color: #ffffff;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+/*utiltiy*/
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding:2rem;
+}
+.regular-font{
+    font-family: 'Montserrat', sans-serif;
+}
+#light-btn{
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    border-bottom: none;
+    background-color:#00e6e6;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  #light-btn:hover{
+    background-color: #00b3b3;
+    cursor: pointer;
+  }
+  #dark-btn{
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    border-bottom: none;
+    background-color:#333;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 0.5rem;
+  }
+  #dark-btn:hover{
+    background-color: #333;
+    cursor: pointer;
+  }
+/* navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+#navbar h2 i{
+    color: #ffaa00;
+    transform: rotate(-40deg);
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.item li a{
+ padding: 0.8rem;
+ color: #333;
+ font-weight: bold;
+ 
+}
+.item li a:hover{
+    border-bottom: 2px dotted #ffaa00;   
+    color: #ffaa00; 
+   }
+/* header */
+#header{
+    display: flex;
+}
+#header div{
+    flex: 1;
+}
+.head-image{
+    background: url(/img/bg.jpg) no-repeat center center/cover;
+    height: 90vh;
+}
+/* form */
+
+.user-form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+.user-form .card{
+    border: none;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 2rem;  
+    box-shadow:5px 5px 5px 5px rgba(0, 0, 0,0.5);
+    z-index: 1;
+}
+.welcome{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    columns: #333;
+    margin-bottom: 1rem;
+}
+.card-text{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-form .card .form-group{
+    display: flex;
+    flex-direction: column;
+}
+.user-form .card .form-group input{
+  padding: 0.5rem;
+  margin-bottom:0.5rem;  
+  outline: none;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+.user-form .card .form-group input:focus{
+   border: none;   
+   border-bottom:2px solid #00b3b3;
+   
+  }
+ 
